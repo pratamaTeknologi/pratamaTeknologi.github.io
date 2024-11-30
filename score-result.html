@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Skor - Revive Monitoring</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?famil33y=Roboto:wght@100;300;400;500;700;900&family=Lato:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+    <!-- Header -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <h1 class="sitename">Revive Monitoring</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cekskor.html" class="active">Cek Skor Kelelahan</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="edukasi.html">Edukasi</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <section id="cekskor" class="section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-12 text-center mb-4" data-aos="fade-up">
+                        <h1 class="mb-4">Skor Kelelahan</h1>
+                        <div class="card bg-warning mb-4">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h2><b>HASIL : </b></h2>
+                                </div>
+                                <div class="card-title">
+                                    <h3 style="margin-right: 20px;"><b>SKOR</b></h3>
+                                </div>
+                                <div class="card-title">
+                                    <h1 style="margin-right: 20px;" id="score"><b>0</b></h1>
+                                </div>
+                                <div class="card-title">
+                                    <h4 style="margin-right: 20px;" id="category"><b>Sedang</b></h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card bg-secondary text-white">
+                            <div class="card-body">
+                                <p>Kategori Skor <br>
+                                    < 50=Kecil<br>
+                                        > 50 - 80 = Sedang<br>
+                                        > 80 = Berat<br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12" data-aos="fade-up">
+                        <div class="card bg-secondary mb-3 text-white" style="display: none;" id="ringan">
+                            <div class="card-body">
+                                <p>
+                                    Tidak diperlukan perbaikan. Namun harus tetap menjaga pola hidup sehat dengan cara
+                                    istirahat secara teratur untuk menjaga mental dan fisik agar tetap stabil serta
+                                    meningkatkan fokus untuk kembali bekerja atau melakukan aktivitas berikut ini:
+                                <ul>
+                                    <li>Menjaga produktivitas dengan tetap selesaikan pekerjaan tepat waktu dan hindari
+                                        menunda tugas, serta fokus pada efisiensi untuk meminimalkan potensi beban
+                                        tambahan
+                                    </li>
+                                    <li>Lakukan peregangan atau berjalan santai setiap 1-2 jam untuk menjaga sirkulasi
+                                        darah
+                                    </li>
+                                    <li>Pencegahan kelelahan dengan memastikan ruang kerja memiliki pencahayaan dan
+                                        ventilasi yang baik</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary mb-3 text-white" style="display: none;" id="sedang">
+                            <div class="card-body">
+                                <p>
+                                    Perlu dilakukan perbaikan, dengan cara mengatur jam tidur dan pola makan, olahraga teratur serta pertahankan kesehatan fisik dan mental atau melakukan aktivitas berikut ini :
+                                <ul>
+                                    <li>Memanajemen waktu dengan menerapkan metode kerja seperti Pomodoro (25 menit kerja, 5 menit istirahat), serta memprioritaskan tugas berdasarkan urgensi dan pentingnya
+                                    </li>
+                                    <li>Mengurangi resiko kelelahan kerja dengan menerapkan istirahat pendek secara berkala, misalnya setiap 1 jam kerja ambil jeda 10 menit, dan juga melakukan peregangan leher, bahu, dan punggung untuk mengurangi ketegangan otot
+                                    </li>
+                                    <li>Berkomunikasi dengan atasan atau tim untuk mendiskusikan beban kerja jika mulai terasa berat</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card bg-secondary mb-3 text-white" style="display: none;" id="berat">
+                            <div class="card-body">
+                                <p>
+                                    Perlu dilakukan perbaikan, dengan cara mengatur jam tidur dan pola makan, olahraga teratur serta pertahankan kesehatan fisik dan mental atau melakukan aktivitas berikut ini :
+                                    Perlu dilakukan perbaikan, dengan cara istirahat yang cukup, mengatur pola makan, serta melakukan cek kesehatan secara berkala atau lakukan aktivitas ini :
+                                <ul>
+                                    <li>Identifikasi tugas utama yang harus diselesaikan terlebih dahulu dan mendelegasikan tugas sekunder kepada rekan kerja jika memungkinkan
+                                    </li>
+                                    <li>Ambil jeda lebih sering, misalnya setiap 45 menit kerja istirahat 10-15 menit dan gunakan waktu istirahat untuk aktivitas relaksasi, seperti peregangan atau berjalan ringan.
+                                    </li>
+                                    <li>Hindari duduk terlalu lama, berdirilah atau berjalan sebentar setiap jam</li>
+                                    <li>Konsumsi makanan bernutrisi dan cukup hidrasi untuk menjaga stamina</li>
+                                    <li>Lakukan teknik mindfulness atau meditasi untuk menenangkan pikiran</li>
+                                    <li>Diskusikan dengan supervisor untuk mencari solusi terkait beban kerja, seperti alat bantu atau tambahan tenaga kerja</li>
+                                    <li>Jika kelelahan terus dirasakan, lakukan penyesuaian jadwal atau jumlah pekerjaan bersama tim dan manajemen</li>
+                                    <li>Mengurangi resiko kelelahan kerja dengan menerapkan istirahat pendek secara berkala, misalnya setiap 1 jam kerja ambil jeda 10 menit, dan juga melakukan peregangan leher, bahu, dan punggung untuk mengurangi ketegangan otot</li>
+                                    <li>Berkomunikasi dengan atasan atau tim untuk mendiskusikan beban kerja jika mulai terasa berat</li>
+                                </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer light-background">
+
+        <p>© 2024 Revive Monitoring. All Rights Reserved</p>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        window.onload = function () {
+            // Ambil skor dan kategori dari localStorage
+            const score = localStorage.getItem('finalScore');
+            const category = localStorage.getItem('category');
+
+            // Cek apakah data ada di localStorage
+            if (score && category) {
+                // Tampilkan skor dan kategori pada elemen yang sudah disiapkan di HTML
+                document.getElementById('score').innerHTML = `<b>${score}</b>`;
+                document.getElementById('category').innerHTML = `<b>${category}</b>`;
+                if (category === "Ringan") {
+                    document.getElementById("ringan").style.display = "block"; // Tampilkan kartu Ringan
+                } else if (category === "Sedang") {
+                    document.getElementById("sedang").style.display = "block"; // Tampilkan kartu Sedang
+                } else if (category === "Berat") {
+                    document.getElementById("berat").style.display = "block"; // Tampilkan kartu Berat
+                }
+            } else {
+                // Jika data tidak ditemukan, beri pesan error
+                document.getElementById('score').innerText = "Data tidak ditemukan!";
+                document.getElementById('category').innerText = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

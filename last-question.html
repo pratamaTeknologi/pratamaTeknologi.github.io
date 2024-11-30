@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Cek Skor - Revive Monitoring</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?famil33y=Roboto:wght@100;300;400;500;700;900&family=Lato:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+    <!-- Header -->
+    <header id="header" class="header d-flex align-items-center sticky-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center">
+                <h1 class="sitename">Revive Monitoring</h1>
+            </a>
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cekskor.html" class="active">Cek Skor Kelelahan</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="edukasi.html">Edukasi</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="container" data-aos="fade-up">
+            <h2>Pertanyaan Kedua</h2>
+            <div class="card bg-warning" style="width: 50vw; height: auto;">
+                <div class="card-body">
+                    <div class="card-title"><h5><b>PETUNJUK</b></h5></div>
+                    <ul>
+                        <li>Tidak Ada Jawaban Yang Salah, Isilah Secara Jujur Sesuai Dengan Kepribadianmu</li>
+                        <li>Cari Tempat Yang Nyaman Dan Kondusif Untuk Dapat Mengisi Pertanyaan Dengan Fokus</li>
+                        <li>Isilah Pertanyaan Sesuai Dengan Kondisimu Saat Ini</li>
+                        <li>Jika Keluar Di Tengah Tes, Maka Seluruh Proses Tes Dan Jawaban Akan Hilang</li>
+                        <li>Hasil Tes Bisa Anda Dapatkan Setelah Selesai Mengisi Semua Pertanyaan Dengan Lengkap</li>
+                    </ul>
+                </div>
+            </div>
+
+            <form id="survey-form" class="container mt-5">
+                <!-- Pertantanyaan 1 -->
+                <div class="question-container mb-4">
+                    <h6 style="font-weight: bold;">1. Kebutuhan Mental (KM)</h6>
+                    <p>
+                    <h6 style="margin-left: 17px;">Berapa banyak aktivitas mental dan persepsi yang diperlukan (seperti
+                        : berfikir, memutuskan,
+                        menghitung, mengingat, melihat, mencari, dsb)? Apakah pekerjaan tersebut mudah atau sulit,
+                        sederhana atau komplek, pasti atau perlu penafsiran?</h6>
+                    <input type="range" class="form-range" id="km-scale" min="0" max="100" step="1" value="0">
+                    <div id="km-value" style="font-weight: bold;">Nilai <span id="km-slider-value">0</span></div>
+                    </p>
+                    <p>
+                    <ul>
+                        <li>Nilai 0-25 = tidak perlu mengingat dan mencari, sederhana dan penuh toleransi.</li>
+                        <li>Nilai 26-50 = perlu mengingat atau mencari, mudah, sederhana dan pekerjaan tersebut pasti.
+                        </li>
+                        <li>Nilai 51-75 = perlu mengingat atau mencari, mudah, namun kompleks dan pekerjaan tersebut
+                            pasti.</li>
+                        <li>Nilai 76-100 = perlu mengingat dan mencari, sulit, kompleks dan pekerjaan tersebut pasti.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+                <!-- Pertantanyaan 2 -->
+                <div class="question-container mb-4">
+                    <h6 style="font-weight: bold;">2. Kebutuhan Fisik (KF)</h6>
+                    <p>
+                    <h6 style="margin-left: 17px;">Berapa banyak aktivitas fisik yang diperlukan (seperti : mendorong,
+                        menarik, memutar, mengontrol, dsb)? Apakah pekerjaan tersebut mudah atau sulit, pelan atau
+                        cepat, statis atau dinamis, terus menerus atau ada waktu untuk beristirahat?</h6>
+                    <input type="range" class="form-range" id="kf-scale" min="0" max="100" step="1" value="0">
+                    <div id="kf-value" style="font-weight: bold;">Nilai <span id="kf-slider-value">0</span></div>
+                    </p>
+                    <p>
+                    <ul>
+                        <li>Nilai 0-25 = Jika pekerjaan tersebut ringan, lambat dan cukup istirahat.</li>
+                        <li>Nilai 26-50 = Jika pekerjaan tersebut ringan cepat dan cukup istirahat.
+                        </li>
+                        <li>Nilai 51-75 = Jika pekerjaan tersebut ringan, cepat dan tidak cukup istirahat.</li>
+                        <li>Nilai 76-100 = Jika pekerjaan tersebut berat, cepat dan tidak cukup istirahat.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Pertantanyaan 3 -->
+                <div class="question-container mb-4">
+                    <h6 style="font-weight: bold;">3. Kebutuhan Waktu (KW)</h6>
+                    <p>
+                    <h6 style="margin-left: 17px;">Berapa banyak tekanan waktu yang dirasakan selama bekerja? Apakah
+                        pekerjaan tersebut dilakukan dengan pelan serta ada waktu istirahat atau cepat tidak ada jeda
+                        istirahat?</h6>
+                    <input type="range" class="form-range" id="kw-scale" min="0" max="100" step="1" value="0">
+                    <div id="kw-value" style="font-weight: bold;">Nilai <span id="kw-slider-value">0</span></div>
+                    </p>
+                    <p>
+                    <ul>
+                        <li>Nilai 0-25 = Jika pekerjaan tersebut santai.</li>
+                        <li>Nilai 26-50 = Jika pekerjaan tersebut perlahan.
+                        </li>
+                        <li>Nilai 51-75 = Jika pekerjaan tersebut cepat.</li>
+                        <li>Nilai 76-100 = Jika pekerjaan tersebut melelahkan.
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Pertanyaan 4 -->
+                <div class="question-container mb-4">
+                    <h6 style="font-weight: bold;">4. Performasi</h6>
+                    <p>
+                    <h6 style="margin-left: 17px;">Seberapa sukses Anda berfikir untuk dapat menyelesaikan serangkaian
+                        pekerjaan? Apakah Anda merasa puas dengan performasi Anda dalam menyelesaikan pekerjaan?</h6>
+                    <input type="range" class="form-range" id="p-scale" min="0" max="100" step="1" value="0">
+                    <div id="p-value" style="font-weight: bold;">Nilai <span id="p-slider-value">0</span></div>
+                    </p>
+                    <p>
+                    <ul>
+                        <li>Nilai 0-25 = Jika sangat tidak puas dalam memenuhi target pekerjaan.</li>
+                        <li>Nilai 26-50 = Jika tidak puas dalam memenuhi target pekerjaan.</li>
+                        <li>Nilai 51-75 = Jika puas dalam memenuhi target pekerjaan.</li>
+                        <li>Nilai 76-100 = Jika sangat puas dalam memenuhi target pekerjaan.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Pertanyaan 5 -->
+                <div class="question-container mb-4">
+                    <h6 style="font-weight: bold;">5. Tingkat Usaha (TU)</h6>
+                    <p>
+                    <h6 style="margin-left: 17px;">Seberapa keras usaha Anda untuk bekerja (secara mental dan fisik)
+                        untuk menyelesaikan pekerjaan sesuai dengan performasi?</h6>
+                    <input type="range" class="form-range" id="tu-scale" min="0" max="100" step="1" value="0">
+                    <div id="tu-value" style="font-weight: bold;">Nilai <span id="tu-slider-value">0</span></div>
+                    </p>
+                    <p>
+                    <ul>
+                        <li>Nilai 0-25 = Jika tidak membutuhkan kerja mental dan fisik yang tinggi.</li>
+                        <li>Nilai 26-50 = Jika membutuhkan kerja mental dan fisik yang ringan.</li>
+                        <li>Nilai 51-75 = Jika membutuhkan kerja mental dan fisik yang sedang.</li>
+                        <li>Nilai 76-100 = Jika membutuhkan kerja mental dan fisik yang tinggi.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Pertanyaan 6 -->
+                <div class="question-container mb-4">
+                    <h6 style="font-weight: bold;">6. Tingkat Frustasi (TF)</h6>
+                    <p>
+                    <h6 style="margin-left: 17px;">Apakah Anda merasa tidak aman, merasa tidak diperhatikan, stres, dan
+                        terganggu? Atau justru Anda merasa aman, diperhatikan, nyaman, rileks, dan menikmati pekerjaan
+                        yang Anda lakukan?</h6>
+                    <input type="range" class="form-range" id="tf-scale" min="0" max="100" step="1" value="0">
+                    <div id="tf-value" style="font-weight: bold;">Nilai <span id="tf-slider-value">0</span>
+                    </div>
+                    </p>
+                    <p>
+                    <ul>
+                        <li>Nilai 0-25 = Jika merasa aman, puas, nyaman, dan kepuasan diri selama menyelesaikan
+                            pekerjaan.</li>
+                        <li>Nilai 26-50 = Jika merasa aman, nyaman, tidak terganggu namun tidak puas dalam menyelesaikan
+                            pekerjaan.</li>
+                        <li>Nilai 51-75 = Jika merasa aman, nyaman, namun terganggu dan tidak puas dalam menyelesaikan
+                            pekerjaan.</li>
+                        <li>Nilai 76-100 = Jika merasa tidak aman, putus asa, tersinggung, dan terganggu.</li>
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Tombol Kirim -->
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary" onclick="calculateScore()">Kirim Jawaban</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Revive Monitoring. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Menampilkan nilai yang dipilih untuk setiap slider
+        document.getElementById("km-scale").addEventListener("input", function () {
+            document.getElementById("km-slider-value").textContent = this.value;
+        });
+
+        document.getElementById("kf-scale").addEventListener("input", function () {
+            document.getElementById("kf-slider-value").textContent = this.value;
+        });
+
+        document.getElementById("kw-scale").addEventListener("input", function () {
+            document.getElementById("kw-slider-value").textContent = this.value;
+        });
+
+        document.getElementById("p-scale").addEventListener("input", function () {
+            document.getElementById("p-slider-value").textContent = this.value;
+        });
+
+        document.getElementById("tu-scale").addEventListener("input", function () {
+            document.getElementById("tu-slider-value").textContent = this.value;
+        });
+
+        document.getElementById("tf-scale").addEventListener("input", function () {
+            document.getElementById("tf-slider-value").textContent = this.value;
+        });
+
+        // Fungsi untuk menghitung dan menampilkan skor
+        function calculateScore() {
+            const counts = JSON.parse(localStorage.getItem('bobotFaktor'));
+            if (!counts) {
+                alert("Silakan selesaikan pertanyaan pertama dulu.");
+                return;
+            }
+            var kmRating = parseInt(document.getElementById("km-scale").value);
+            var kfRating = parseInt(document.getElementById("kf-scale").value);
+            var kwRating = parseInt(document.getElementById("kw-scale").value);
+            var pRating = parseInt(document.getElementById("p-scale").value);
+            var tuRating = parseInt(document.getElementById("tu-scale").value);
+            var tfRating = parseInt(document.getElementById("tf-scale").value);
+
+            // Bobot faktor untuk setiap elemen
+            const wwl = (kmRating * counts.KM) +
+                (kfRating * counts.KF) +
+                (kwRating * counts.KW) +
+                (pRating * counts.P) +
+                (tuRating * counts.TU) +
+                (tfRating * counts.TF);
+
+            const finalScore = wwl / 15;
+
+            // Menampilkan skor dan kategori
+            displayScore(finalScore);
+        }
+
+        // Fungsi untuk menampilkan hasil skor dan kategori
+        function displayScore(score) {
+            var category = '';
+            if (score < 50) {
+                category = 'Ringan';
+            } else if (score >= 50 && score <= 80) {
+                category = 'Sedang';
+            } else {
+                category = 'Berat';
+            }
+            localStorage.setItem('finalScore', score.toFixed(2));
+            localStorage.setItem('category', category);
+            // Menampilkan hasil skor dan kategori
+            window.location.href = 'score-result.html';
+        }
+    </script>
+
+</body>
+
+</html>
