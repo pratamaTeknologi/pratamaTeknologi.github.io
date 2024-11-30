@@ -1,305 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Cek Skor - Revive Monitoring</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?famil33y=Roboto:wght@100;300;400;500;700;900&family=Lato:wght@100;300;400;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?famil33y=Roboto:wght@100;300;400;500;700;900&family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
 
     <!-- Main CSS File -->
-    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet" />
     <style>
-        .form-check {
-            margin: 10px 0;
-        }
+      .form-check {
+        margin: 10px 0;
+      }
 
-        .form-check-input {
-            position: absolute;
-            opacity: 0;
-        }
+      .form-check-input {
+        position: absolute;
+        opacity: 0;
+      }
 
-        .form-check-label {
-            background-color: #007bff;
-            color: #fff;
-            padding: 5px 10px;
-            border-radius: 50px;
-            cursor: pointer;
-            font-weight: bold;
-            margin: 5px;
-            display: inline-block;
-            /* Menjadikan elemen label sebagai inline-block */
-            width: 250px;
-            /* Menetapkan lebar yang tetap, sesuaikan dengan kebutuhan */
-            text-align: center;
-            /* Agar teks di dalam label rata tengah */
-        }
+      .form-check-label {
+        background-color: #007bff;
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 5px;
+        display: inline-block;
+        /* Menjadikan elemen label sebagai inline-block */
+        width: 250px;
+        /* Menetapkan lebar yang tetap, sesuaikan dengan kebutuhan */
+        text-align: center;
+        /* Agar teks di dalam label rata tengah */
+      }
 
-        .form-check-input:checked+.form-check-label {
-            background-color: #0056b3;
-        }
+      .form-check-input:checked + .form-check-label {
+        background-color: #0056b3;
+      }
 
-        .form-check-label:hover {
-            background-color: #0056b3;
-        }
+      .form-check-label:hover {
+        background-color: #0056b3;
+      }
     </style>
-</head>
+  </head>
 
-<body class="index-page">
-
+  <body class="index-page">
     <!-- Header -->
     <header id="header" class="header d-flex align-items-center sticky-top">
-        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
-                <h1 class="sitename">Revive Monitoring</h1>
-            </a>
-            <nav id="navmenu" class="navmenu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="cekskor.html" class="active">Cek Skor Kelelahan</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="edukasi.html">Edukasi</a></li>
-                    <li><a href="aboutus.html">About Us</a></li>
-                </ul>
-                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-            </nav>
-        </div>
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">Revive Monitoring</h1>
+        </a>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cekskor.html" class="active">Cek Beban Kerja</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="edukasi.html">Edukasi</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
-        <section class="container" data-aos="fade-up">
-            <h2>Pertanyaan Pertama</h2>
-            <div class="card bg-warning" style="width: 50vw; height: auto;">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h5><b>PETUNJUK</b></h5>
-                    </div>
-                    <ul>
-                        <li>Tidak Ada Jawaban Yang Salah, Isilah Secara Jujur Sesuai Dengan Kepribadianmu</li>
-                        <li>Cari Tempat Yang Nyaman Dan Kondusif Untuk Dapat Mengisi Pertanyaan Dengan Fokus</li>
-                        <li>Isilah Pertanyaan Sesuai Dengan Kondisimu Saat Ini</li>
-                        <li>Jika Keluar Di Tengah Tes, Maka Seluruh Proses Tes Dan Jawaban Akan Hilang</li>
-                        <li>Hasil Tes Bisa Anda Dapatkan Setelah Selesai Mengisi Semua Pertanyaan Dengan Lengkap</li>
-                    </ul>
-                </div>
+      <section class="container" data-aos="fade-up">
+        <h2>Pertanyaan Pertama</h2>
+        <div class="card bg-warning" style="width: 50vw; height: auto">
+          <div class="card-body">
+            <div class="card-title">
+              <h5><b>PETUNJUK</b></h5>
             </div>
-            <form id="surveyForm">
-                <!-- Pertanyaan 1 -->
-                <div class="question-container mb-4">
-                    <h6>1. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q1" id="q1KM" value="KM">
-                        <label class="form-check-label" for="q1KM">Kebutuhan Mental (KM)</label>
-                        <input class="form-check-input" type="radio" name="q1" id="q1KF" value="KF">
-                        <label class="form-check-label" for="q1KF">Kebutuhan Fisik (KF)</label>
-                    </div>
-                </div>
+            <ul>
+              <li>Tidak Ada Jawaban Yang Salah, Isilah Secara Jujur Sesuai Dengan Kepribadianmu</li>
+              <li>Cari Tempat Yang Nyaman Dan Kondusif Untuk Dapat Mengisi Pertanyaan Dengan Fokus</li>
+              <li>Isilah Pertanyaan Sesuai Dengan Kondisimu Saat Ini</li>
+              <li>Jika Keluar Di Tengah Tes, Maka Seluruh Proses Tes Dan Jawaban Akan Hilang</li>
+              <li>Hasil Tes Bisa Anda Dapatkan Setelah Selesai Mengisi Semua Pertanyaan Dengan Lengkap</li>
+            </ul>
+          </div>
+        </div>
+        <form id="surveyForm">
+          <!-- Pertanyaan 1 -->
+          <div class="question-container mb-4">
+            <h6>1. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1KM" value="KM" />
+              <label class="form-check-label" for="q1KM">Kebutuhan Mental (KM)</label>
+              <input class="form-check-input" type="radio" name="q1" id="q1KF" value="KF" />
+              <label class="form-check-label" for="q1KF">Kebutuhan Fisik (KF)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 2 -->
-                <div class="question-container mb-4">
-                    <h6>2. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q2" id="q2KM" value="KM">
-                        <label class="form-check-label" for="q2KM">Kebutuhan Mental (KM)</label>
-                        <input class="form-check-input" type="radio" name="q2" id="q2KW" value="KW">
-                        <label class="form-check-label" for="q2KW">Kebutuhan Waktu (KW)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 2 -->
+          <div class="question-container mb-4">
+            <h6>2. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2KM" value="KM" />
+              <label class="form-check-label" for="q2KM">Kebutuhan Mental (KM)</label>
+              <input class="form-check-input" type="radio" name="q2" id="q2KW" value="KW" />
+              <label class="form-check-label" for="q2KW">Kebutuhan Waktu (KW)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 3 -->
-                <div class="question-container mb-4">
-                    <h6>3. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q3" id="q3KM" value="KM">
-                        <label class="form-check-label" for="q3KM">Kebutuhan Mental (KM)</label>
-                        <input class="form-check-input" type="radio" name="q3" id="q3P" value="P">
-                        <label class="form-check-label" for="q3P">Performasi (P)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 3 -->
+          <div class="question-container mb-4">
+            <h6>3. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q3" id="q3KM" value="KM" />
+              <label class="form-check-label" for="q3KM">Kebutuhan Mental (KM)</label>
+              <input class="form-check-input" type="radio" name="q3" id="q3P" value="P" />
+              <label class="form-check-label" for="q3P">Performasi (P)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 4 -->
-                <div class="question-container mb-4">
-                    <h6>4. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q4" id="q4KM" value="KM">
-                        <label class="form-check-label" for="q4KM">Kebutuhan Mental (KM)</label>
-                        <input class="form-check-input" type="radio" name="q4" id="q4TU" value="TU">
-                        <label class="form-check-label" for="q4TU">Tingkat Usaha (TU)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 4 -->
+          <div class="question-container mb-4">
+            <h6>4. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q4" id="q4KM" value="KM" />
+              <label class="form-check-label" for="q4KM">Kebutuhan Mental (KM)</label>
+              <input class="form-check-input" type="radio" name="q4" id="q4TU" value="TU" />
+              <label class="form-check-label" for="q4TU">Tingkat Usaha (TU)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 5 -->
-                <div class="question-container mb-4">
-                    <h6>5. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q5" id="q5KM" value="KM">
-                        <label class="form-check-label" for="q5KM">Kebutuhan Mental (KM)</label>
-                        <input class="form-check-input" type="radio" name="q5" id="q5TF" value="TF">
-                        <label class="form-check-label" for="q5TF">Tingkat Frustasi (TF)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 5 -->
+          <div class="question-container mb-4">
+            <h6>5. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q5" id="q5KM" value="KM" />
+              <label class="form-check-label" for="q5KM">Kebutuhan Mental (KM)</label>
+              <input class="form-check-input" type="radio" name="q5" id="q5TF" value="TF" />
+              <label class="form-check-label" for="q5TF">Tingkat Frustasi (TF)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 6 -->
-                <div class="question-container mb-4">
-                    <h6>6. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q6" id="q6KF" value="KF">
-                        <label class="form-check-label" for="q6KF">Kebutuhan Fisik (KF)</label>
-                        <input class="form-check-input" type="radio" name="q6" id="q6KW" value="KW">
-                        <label class="form-check-label" for="q6KW">Kebutuhan Waktu (KW)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 6 -->
+          <div class="question-container mb-4">
+            <h6>6. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q6" id="q6KF" value="KF" />
+              <label class="form-check-label" for="q6KF">Kebutuhan Fisik (KF)</label>
+              <input class="form-check-input" type="radio" name="q6" id="q6KW" value="KW" />
+              <label class="form-check-label" for="q6KW">Kebutuhan Waktu (KW)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 7 -->
-                <div class="question-container mb-4">
-                    <h6>7. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q7" id="q7KF" value="KF">
-                        <label class="form-check-label" for="q7KF">Kebutuhan Fisik (KF)</label>
-                        <input class="form-check-input" type="radio" name="q7" id="q7P" value="P">
-                        <label class="form-check-label" for="q7P">Performasi (P)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 7 -->
+          <div class="question-container mb-4">
+            <h6>7. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q7" id="q7KF" value="KF" />
+              <label class="form-check-label" for="q7KF">Kebutuhan Fisik (KF)</label>
+              <input class="form-check-input" type="radio" name="q7" id="q7P" value="P" />
+              <label class="form-check-label" for="q7P">Performasi (P)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 8 -->
-                <div class="question-container mb-4">
-                    <h6>8. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q8" id="q8KF" value="KF">
-                        <label class="form-check-label" for="q8KF">Kebutuhan Fisik (KF)</label>
-                        <input class="form-check-input" type="radio" name="q8" id="q8TU" value="TU">
-                        <label class="form-check-label" for="q8TU">Tingkat Usaha (TU)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 8 -->
+          <div class="question-container mb-4">
+            <h6>8. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q8" id="q8KF" value="KF" />
+              <label class="form-check-label" for="q8KF">Kebutuhan Fisik (KF)</label>
+              <input class="form-check-input" type="radio" name="q8" id="q8TU" value="TU" />
+              <label class="form-check-label" for="q8TU">Tingkat Usaha (TU)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 9 -->
-                <div class="question-container mb-4">
-                    <h6>9. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q9" id="q9KF" value="KF">
-                        <label class="form-check-label" for="q9KF">Kebutuhan Fisik (KF)</label>
-                        <input class="form-check-input" type="radio" name="q9" id="q9TF" value="TF">
-                        <label class="form-check-label" for="q9TF">Tingkat Frustasi (TF)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 9 -->
+          <div class="question-container mb-4">
+            <h6>9. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q9" id="q9KF" value="KF" />
+              <label class="form-check-label" for="q9KF">Kebutuhan Fisik (KF)</label>
+              <input class="form-check-input" type="radio" name="q9" id="q9TF" value="TF" />
+              <label class="form-check-label" for="q9TF">Tingkat Frustasi (TF)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 10 -->
-                <div class="question-container mb-4">
-                    <h6>10. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q10" id="q10KW" value="KW">
-                        <label class="form-check-label" for="q10KW">Kebutuhan Waktu (KW)</label>
-                        <input class="form-check-input" type="radio" name="q10" id="q10P" value="P">
-                        <label class="form-check-label" for="q10P">Performasi (P)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 10 -->
+          <div class="question-container mb-4">
+            <h6>10. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q10" id="q10KW" value="KW" />
+              <label class="form-check-label" for="q10KW">Kebutuhan Waktu (KW)</label>
+              <input class="form-check-input" type="radio" name="q10" id="q10P" value="P" />
+              <label class="form-check-label" for="q10P">Performasi (P)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 11 -->
-                <div class="question-container mb-4">
-                    <h6>11. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q11" id="q11KW" value="KW">
-                        <label class="form-check-label" for="q11KW">Kebutuhan Waktu (KW)</label>
-                        <input class="form-check-input" type="radio" name="q11" id="q11TU" value="TU">
-                        <label class="form-check-label" for="q11TU">Tingkat Usaha (TU)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 11 -->
+          <div class="question-container mb-4">
+            <h6>11. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q11" id="q11KW" value="KW" />
+              <label class="form-check-label" for="q11KW">Kebutuhan Waktu (KW)</label>
+              <input class="form-check-input" type="radio" name="q11" id="q11TU" value="TU" />
+              <label class="form-check-label" for="q11TU">Tingkat Usaha (TU)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 12 -->
-                <div class="question-container mb-4">
-                    <h6>12. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q12" id="q12KW" value="KW">
-                        <label class="form-check-label" for="q12KW">Kebutuhan Waktu (KW)</label>
-                        <input class="form-check-input" type="radio" name="q12" id="q12TF" value="TF">
-                        <label class="form-check-label" for="q12TF">Tingkat Frustasi (TF)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 12 -->
+          <div class="question-container mb-4">
+            <h6>12. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q12" id="q12KW" value="KW" />
+              <label class="form-check-label" for="q12KW">Kebutuhan Waktu (KW)</label>
+              <input class="form-check-input" type="radio" name="q12" id="q12TF" value="TF" />
+              <label class="form-check-label" for="q12TF">Tingkat Frustasi (TF)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 13 -->
-                <div class="question-container mb-4">
-                    <h6>13. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q13" id="q13P" value="P">
-                        <label class="form-check-label" for="q13P">Performasi (P)</label>
-                        <input class="form-check-input" type="radio" name="q13" id="q13TU" value="TU">
-                        <label class="form-check-label" for="q13TU">Tingkat Usaha (TU)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 13 -->
+          <div class="question-container mb-4">
+            <h6>13. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q13" id="q13P" value="P" />
+              <label class="form-check-label" for="q13P">Performasi (P)</label>
+              <input class="form-check-input" type="radio" name="q13" id="q13TU" value="TU" />
+              <label class="form-check-label" for="q13TU">Tingkat Usaha (TU)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 14 -->
-                <div class="question-container mb-4">
-                    <h6>14. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q14" id="q14P" value="P">
-                        <label class="form-check-label" for="q14P">Performasi (P)</label>
-                        <input class="form-check-input" type="radio" name="q14" id="q14TF" value="TF">
-                        <label class="form-check-label" for="q14TF">Tingkat Frustasi (TF)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 14 -->
+          <div class="question-container mb-4">
+            <h6>14. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q14" id="q14P" value="P" />
+              <label class="form-check-label" for="q14P">Performasi (P)</label>
+              <input class="form-check-input" type="radio" name="q14" id="q14TF" value="TF" />
+              <label class="form-check-label" for="q14TF">Tingkat Frustasi (TF)</label>
+            </div>
+          </div>
 
-                <!-- Pertanyaan 15 -->
-                <div class="question-container mb-4">
-                    <h6>15. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam
-                        menyelesaikan pekerjaan Anda?</h6>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="q15" id="q15TU" value="TU">
-                        <label class="form-check-label" for="q15TU">Tingkat Usaha (TU)</label>
-                        <input class="form-check-input" type="radio" name="q15" id="q15TF" value="TF">
-                        <label class="form-check-label" for="q15TF">Tingkat Frustasi (TF)</label>
-                    </div>
-                </div>
+          <!-- Pertanyaan 15 -->
+          <div class="question-container mb-4">
+            <h6>15. Menurut Anda manakah dari pasangan pilihan dibawah ini yang Anda rasa lebih dominan dalam menyelesaikan pekerjaan Anda?</h6>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q15" id="q15TU" value="TU" />
+              <label class="form-check-label" for="q15TU">Tingkat Usaha (TU)</label>
+              <input class="form-check-input" type="radio" name="q15" id="q15TF" value="TF" />
+              <label class="form-check-label" for="q15TF">Tingkat Frustasi (TF)</label>
+            </div>
+          </div>
 
-
-
-                <!-- Submit Button -->
-                <div class="text-end mt-4">
-                    <button type="submit" class="btn btn-primary">Selanjutnya</button>
-                </div>
-            </form>
-        </section>
+          <!-- Submit Button -->
+          <div class="text-end mt-4">
+            <button type="submit" class="btn btn-primary">Selanjutnya</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Revive Monitoring. All rights reserved.</p>
+      <p>&copy; 2024 Revive Monitoring. All rights reserved.</p>
     </footer>
 
     <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -308,42 +286,38 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
-        document.getElementById('surveyForm').addEventListener('submit', function (event) {
-            event.preventDefault();
+      document.getElementById('surveyForm').addEventListener('submit', function (event) {
+        event.preventDefault();
 
-            const elements = ['KM', 'KF', 'KW', 'P', 'TU', 'TF'];
-            const counts = {
-                KM: 0,
-                KF: 0,
-                KW: 0,
-                P: 0,
-                TU: 0,
-                TF: 0,
-            };
+        const elements = ['KM', 'KF', 'KW', 'P', 'TU', 'TF'];
+        const counts = {
+          KM: 0,
+          KF: 0,
+          KW: 0,
+          P: 0,
+          TU: 0,
+          TF: 0,
+        };
 
+        for (let i = 1; i <= 15; i++) {
+          const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
 
-            for (let i = 1; i <= 15; i++) {
-
-                const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
-
-                if (selectedOption) {
-                    const value = selectedOption.value;
-                    if (counts[value] !== undefined) {
-                        counts[value] += 1;
-                    }
-                }
+          if (selectedOption) {
+            const value = selectedOption.value;
+            if (counts[value] !== undefined) {
+              counts[value] += 1;
             }
+          }
+        }
 
-            console.log("Hasil Bobot Faktor:", counts);
+        console.log('Hasil Bobot Faktor:', counts);
 
-            // Simpan hasil ke localStorage agar bisa digunakan di halaman berikutnya
-            localStorage.setItem('bobotFaktor', JSON.stringify(counts));
+        // Simpan hasil ke localStorage agar bisa digunakan di halaman berikutnya
+        localStorage.setItem('bobotFaktor', JSON.stringify(counts));
 
-            // Pindah ke halaman berikutnya (last-question.html) setelah melihat log
-            window.location.href = 'last-question.html';
-        });
-
+        // Pindah ke halaman berikutnya (last-question.html) setelah melihat log
+        window.location.href = 'last-question.html';
+      });
     </script>
-</body>
-
+  </body>
 </html>
